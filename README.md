@@ -346,7 +346,7 @@ La forma más rápida de resolver un crash si no comprendes los detalles técnic
 > Si no estás seguro de cómo realizar una reinstalación de Windows o configurar adecuadamente el sistema, considera buscar ayuda profesional para evitar la pérdida de datos o la creación de nuevos problemas.
 
 > [!TIP]
-> **¡Y si todo falla y nada parece funcionar, puedes siempre probar a **¡**quemar el PC! 🔥🔥** ¡Pero no olvides que esta es una solución bastante irreversible y, por cierto, no la recomendamos en absoluto! 😉
+> ¡Y si todo falla y nada parece funcionar, puedes siempre probar a ¡**quemar el PC! 🔥🔥** ¡Pero no olvides que esta es una solución bastante irreversible y, por cierto, no la recomendamos en absoluto! 😉
 
 ---
 
