@@ -1,0 +1,1 @@
+# -Soluci-n-de-problemas-de-CRASH-en-WINDOWS-c-mo-resolver-FALLAS-ERRORES-y-PANTALLAZOS-AZULES-
