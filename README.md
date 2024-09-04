@@ -81,7 +81,7 @@ Una sobrecarga de la memoria RAM puede provocar crashes, especialmente si abres 
 > [!IMPORTANT]
 > Aumentar la memoria RAM puede mejorar significativamente el rendimiento del sistema y reducir la frecuencia de los crashes relacionados con la sobrecarga de memoria. Verifica la capacidad máxima de RAM que tu placa base soporta antes de realizar la actualización.
 
-## 💽 Problemas con el Disco Duro
+# 💽 Problemas con el Disco Duro
 
 Un disco duro con problemas de lectura/escritura puede ser la causa de los crashes. Para diagnosticar y solucionar estos problemas, sigue estos pasos:
 
@@ -95,14 +95,14 @@ Un disco duro con problemas de lectura/escritura puede ser la causa de los crash
 
 2. **Restaurar y Escanear la Salud de la Imagen del Sistema**:
    - **Comando**: Usa los comandos de **DISM** para escanear y restaurar la salud de la imagen del sistema, lo que puede ayudar a resolver problemas subyacentes relacionados con el disco:
-```cmd
-DISM /Online /Cleanup-Image /ScanHealth
-```
+     ```cmd
+     DISM /Online /Cleanup-Image /ScanHealth
+     ```
 > [!TIP]
 > Este comando escanea la imagen en busca de corrupciones.
-```cmd
-DISM /Online /Cleanup-Image /RestoreHealth
-```
+     ```cmd
+     DISM /Online /Cleanup-Image /RestoreHealth
+     ```
 > [!CAUTION]
 > Este comando restaura la salud de la imagen si se detectan corrupciones. Es útil si sospechas que hay problemas de corrupción en la instalación de Windows.
 
@@ -120,6 +120,13 @@ DISM /Online /Cleanup-Image /RestoreHealth
 
 > [!WARNING]
 > Si los resultados de las pruebas de velocidad son significativamente inferiores a lo esperado, o si hay grandes discrepancias entre las lecturas y las escrituras, podría ser indicativo de un disco que está fallando.
+
+   - **Victoria HDD/SSD**: [Victoria HDD/SSD](https://www.filehorse.com/es/descargar-victoria-ssd-hdd/) es otra herramienta poderosa para analizar el estado de discos duros y SSDs. Ofrece un análisis detallado y opciones para reparar sectores defectuosos.
+     - Descarga Victoria desde el enlace.
+     - Ejecuta la herramienta para realizar un análisis exhaustivo y diagnosticar problemas con el disco.
+     
+> [!TIP]
+> Victoria HDD/SSD puede proporcionar una visión más profunda del estado del disco, incluyendo la posibilidad de realizar reparaciones en sectores defectuosos. Utiliza esta herramienta si los otros diagnósticos sugieren problemas en el disco.
 
 > [!IMPORTANT]
 > Si se encuentran errores o el estado del disco muestra advertencias, considera reemplazar el disco duro o SSD para evitar más problemas. Ignorar estas señales podría llevar a una pérdida total de datos.
