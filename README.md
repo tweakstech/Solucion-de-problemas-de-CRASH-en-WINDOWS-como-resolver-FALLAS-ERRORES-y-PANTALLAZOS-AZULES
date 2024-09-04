@@ -61,9 +61,9 @@ Una sobrecarga de la memoria RAM puede provocar crashes, especialmente si abres 
 
 2. **Optimiza el uso de RAM**:
    - **Comando**: Usa `tasklist` en el Símbolo del sistema para listar todos los procesos en ejecución y su uso de memoria.
-     ```cmd
-     tasklist /FI "MEMUSAGE gt 50000"
-     ```
+```cmd
+tasklist /FI "MEMUSAGE gt 50000"
+```
 > [!TIP]
 > Este comando mostrará todos los procesos que están utilizando más de 50 MB de RAM, lo que puede ayudarte a identificar aplicaciones que consumen mucha memoria.
 
@@ -87,22 +87,22 @@ Un disco duro con problemas de lectura/escritura puede ser la causa de los crash
 
 1. **Realizar un análisis del disco**:
    - **Comando**: Usa `CHKDSK` para verificar la integridad del disco duro. Sigue estos pasos:
-     ```cmd
-     chkdsk C: /f /r
-     ```
+```cmd
+chkdsk C: /f /r
+```
 > [!NOTE]
 > Este comando busca y repara errores en la unidad C:. También busca sectores defectuosos y recupera la información que se pueda leer. Debes reiniciar tu computadora para que el análisis completo se ejecute.
 
 2. **Restaurar y Escanear la Salud de la Imagen del Sistema**:
    - **Comando**: Usa los comandos de **DISM** para escanear y restaurar la salud de la imagen del sistema, lo que puede ayudar a resolver problemas subyacentes relacionados con el disco:
-     ```cmd
-     DISM /Online /Cleanup-Image /ScanHealth
-     ```
+```cmd
+DISM /Online /Cleanup-Image /ScanHealth
+```
 > [!TIP]
 > Este comando escanea la imagen en busca de corrupciones.
-     ```cmd
-     DISM /Online /Cleanup-Image /RestoreHealth
-     ```
+```cmd
+DISM /Online /Cleanup-Image /RestoreHealth
+```
 > [!CAUTION]
 > Este comando restaura la salud de la imagen si se detectan corrupciones. Es útil si sospechas que hay problemas de corrupción en la instalación de Windows.
 
@@ -196,9 +196,9 @@ Una actualización de Windows conflictiva puede causar crashes. Para gestionar a
 1. **Verificar actualizaciones recientes**:
    - Comprueba la última versión instalada de Windows y busca en Google si se han reportado problemas.
      - Utiliza el siguiente comando para ver las actualizaciones instaladas:
-       ```cmd
-       wmic qfe list brief /format:table
-       ```
+```cmd
+wmic qfe list brief /format:table
+```
 > [!NOTE]
 > Este comando muestra una lista de actualizaciones instaladas, incluyendo el ID de cada actualización. Esto te ayudará a identificar qué actualizaciones están presentes en tu sistema y facilitará la búsqueda de problemas asociados.
 
@@ -208,10 +208,10 @@ Una actualización de Windows conflictiva puede causar crashes. Para gestionar a
 2. **Desinstalar actualizaciones problemáticas**:
    - Si encuentras problemas reportados con una actualización específica, puedes desinstalarla para ver si eso resuelve el problema.
      - Utiliza el siguiente comando para desinstalar la actualización problemática:
-       ```cmd
-       wusa /uninstall /kb:[ID de la actualización]
-       ```
-       - Reemplaza `[ID de la actualización]` con el número correspondiente a la actualización que deseas desinstalar.
+```cmd
+wusa /uninstall /kb:[ID de la actualización]
+```
+- Reemplaza `[ID de la actualización]` con el número correspondiente a la actualización que deseas desinstalar.
 
 > [!WARNING]
 > Desinstalar actualizaciones puede resolver problemas inmediatos, pero asegúrate de realizar esta acción con precaución. Las actualizaciones desinstaladas podrían contener parches de seguridad importantes.
